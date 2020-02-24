@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@mipmap/map"
+        android:id="@+id/map"
+        android:title="@string/mapa"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:icon="@mipmap/maplegend"
+        android:id="@+id/sucursales"
+        android:title="@string/sucursales"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@mipmap/mapplus"
+        android:id="@+id/agregar"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="@string/agregar"
+        />
+
+</menu>

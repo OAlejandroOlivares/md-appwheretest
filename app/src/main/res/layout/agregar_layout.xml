@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/layout1"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@id/inp_direccion"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Direccion"
+        app:layout_constraintTop_toBottomOf="@+id/layout1"
+        android:layout_marginTop="16dp"
+        android:id="@+id/layout2"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@id/inp_phone"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefono"
+        app:layout_constraintTop_toBottomOf="@+id/layout2"
+        android:layout_marginTop="16dp"
+        android:id="@+id/layout3"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@id/inp_latitud"
+            android:background="@color/white"
+            android:inputType="phone"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitud"
+        app:layout_constraintTop_toBottomOf="@+id/layout3"
+        android:layout_marginTop="16dp"
+        android:id="@+id/layout4"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_latitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@id/inp_longitud"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitud"
+        app:layout_constraintTop_toBottomOf="@+id/layout4"
+        android:layout_marginTop="16dp"
+        android:id="@+id/layout5"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_longitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/layout5"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryLight"
+        android:text="Continuar"
+        android:textColor="@color/white"
+        android:id="@+id/sumbit_btn"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
